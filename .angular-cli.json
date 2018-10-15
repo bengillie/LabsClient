@@ -7,10 +7,7 @@
     {
       "root": "src",
       "outDir": "dist",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
+      "assets": ["assets", "favicon.ico"],
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
@@ -19,8 +16,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.less"
+        "styles/styles.variables.less",
+        "styles/styles.reset.less",
+        "styles/styles.less"
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": ["./styles/"]
+      },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {

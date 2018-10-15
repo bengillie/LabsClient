@@ -1,0 +1,71 @@
+/* nav component */
+
+// Variables
+@import "styles.variables.less";
+
+@menuLinkFontSize: @midFontSize;
+
+.active-link {
+  background-color: @brightBlue !important;
+  color: @white !important;
+}
+
+.child-link {
+  padding-left: 16% !important;
+  color: @white;
+  text-decoration: none;
+  font-size: @menuLinkFontSize;
+  min-width: 100px;
+}
+
+#logo {
+  background-image: url("../../assets/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10%;
+  width: 200px;
+  height: 150px;
+}
+
+.nav-container {
+  background-color: @white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: @screenHeight;
+  width: @menuWidth;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+
+  a {
+    color: @darkNavyBlue;
+
+    &:visited,
+    &:link {
+      height: 8%;
+      width: 100%;
+      display: block;
+      border-top-style: solid;
+      border-top-color: @navBorderBlue;
+      border-top-width: 0.04em;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      background-color: @brightBlue;
+      color: @white !important;
+    }
+  }
+}
+
+.parent-link {
+  padding-left: 5% !important;
+  text-decoration: none;
+  font-size: @menuLinkFontSize;
+  min-width: 100px;
+}

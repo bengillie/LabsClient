@@ -1,0 +1,41 @@
+<div class="component-container">
+  <div class="flex-container-center">
+    <div class="card-container">
+
+      <h1>Time Table</h1>
+      <div class="flex-container-center-90">
+        <div class="time-table">
+          <div class="flex-container">
+
+            <div class="col-time border-right">Time
+              <div class="time border-top" *ngFor="let timeSlot of timeSlots" [style.top]="timeSlot.position">{{timeSlot.time}}</div>
+            </div>
+
+            <div class="col border-right">Monday
+              <div class="event" *ngFor="let monEvent of mondayEvents" [style.top]="monEvent.position" [style.height]="monEvent.height">{{ monEvent.name }}</div>
+            </div>
+            <div class="col border-right">Tuesday
+              <div class="event" *ngFor="let tueEvent of tuesdayEvents" [style.top]="tueEvent.position" [style.height]="tueEvent.height">{{ tueEvent.name }}</div>
+            </div>
+            <div class="col border-right">Wednesday
+              <div class="event" *ngFor="let wedEvent of wednesdayEvents" [style.top]="wedEvent.position" [style.height]="wedEvent.height">{{ wedEvent.name }}</div>
+            </div>
+            <div class="col border-right">Thursday
+              <div class="event" *ngFor="let thuEvent of thursdayEvents" [style.top]="thuEvent.position" [style.height]="thuEvent.height">{{ thuEvent.name }}</div>
+            </div>
+            <div class="col border-right">Friday
+              <div class="event" *ngFor="let friEvent of fridayEvents" [style.top]="friEvent.position" [style.height]="friEvent.height">{{ friEvent.name }}</div>
+            </div>
+            <div class="col border-right">Saturday
+              <div class="event" *ngFor="let satEvent of saturdayEvents" [style.top]="satEvent.position" [style.height]="satEvent.height">{{ satEvent.name }}</div>
+            </div>
+            <div class="col border-right">Sunday
+              <div class="event" *ngFor="let sunEvent of sundayEvents" [style.top]="sunEvent.position" [style.height]="sunEvent.height">{{ sunEvent.name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+// time table styles
+
+@import "styles.variables.less";
+
+@timetableHourheight: 8.3%;
+
+.col {
+  border-width: 1px;
+  border-color: @darkNavyBlue;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  width: 14%;
+}
+
+.col-time {
+  border-width: 1px;
+  border-color: @darkNavyBlue;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  width: 8%;
+}
+
+.event {
+  background-color: @brightBlue;
+  color: @white;
+  height: @timetableHourheight;
+  margin: 1%;
+  position: absolute;
+  //   top: 8.3%;
+  width: 98%;
+}
+
+.flex-container-center-90 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+
+h1 {
+  color: @brightBlue;
+  font-size: @largeFontSize;
+  padding: 1%;
+}
+
+.time-table {
+  color: @darkNavyBlue;
+  height: 90%;
+  width: 90%;
+}
+
+.time {
+  height: @timetableHourheight;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  &:before {
+    border-top-style: solid;
+    border-color: @darkNavyBlue;
+    border-width: 1px;
+    content: "";
+    right: 0;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    width: 30%;
+  }
+}
